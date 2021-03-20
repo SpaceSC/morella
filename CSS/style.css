@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  background-color: #efd592;
+  font-family: "Roboto";
+}
+
+body #hamburger {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100vw;
+}
+
+body #hamburger #toggleText {
+  color: #efd592 !important;
+}
+
+body #hamburger #hamburgerBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #efd592;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 10px;
+}
+
+body #hamburger #hamburgerBtn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body #hamburger #hamburgerBtn svg {
+  color: #efd592;
+  stroke-width: 1;
+  stroke: #efd592;
+}
+
+body #img {
+  background-color: #242d38;
+  height: 65vh;
+}
+
+body #text {
+  margin: 20px;
+}
+
+body #text h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+body #text p {
+  font-family: 'Roboto Slab', serif;
+  font-size: .8rem;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+body #text #readBtn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  color: #242d38;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: .9rem;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px;
+  }
+  body #hamburger {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: calc(100vw - 60px);
+  }
+  body #hamburger #hamburgerBtn {
+    border: 1px solid #242d38;
+    background-color: #242d38;
+  }
+  body #img {
+    height: 80vh;
+    width: 80vh;
+  }
+  body #text {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #text h1 {
+    font-size: 2.2rem;
+  }
+  body #text #readBtn {
+    width: 120px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
